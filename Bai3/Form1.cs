@@ -32,9 +32,7 @@ namespace bai03
             ApplyFilter();
         }
 
-        // =====================================================================
         //  DỮ LIỆU
-        // =====================================================================
         private void LoadCategories()
         {
             var cats = new List<Category>
@@ -89,9 +87,7 @@ namespace bai03
             return id;
         }
 
-        // =====================================================================
         //  VALIDATION
-        // =====================================================================
         private bool ValidateInput(out decimal price, out int qty)
         {
             errorProvider.Clear();
@@ -117,9 +113,7 @@ namespace bai03
             return ok;
         }
 
-        // =====================================================================
         //  SỰ KIỆN / CHỨC NĂNG
-        // =====================================================================
         private void BtnAdd_Click(object sender, EventArgs e)
         {
             decimal price; int qty;
@@ -288,9 +282,7 @@ namespace bai03
             txtProductName.Focus();
         }
 
-        // =====================================================================
         //  XUẤT CSV (dùng chung cho menu File → Export CSV và nút "Xuất CSV")
-        // =====================================================================
         private void Export_Click(object sender, EventArgs e)
         {
             using (var sfd = new SaveFileDialog())
