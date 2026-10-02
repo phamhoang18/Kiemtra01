@@ -24,7 +24,7 @@ namespace bai03
         {
             this.components = new Container();
 
-            // ---------- Khởi tạo control ----------
+            //Khởi tạo control 
             this.menuStrip = new MenuStrip();
             this.mnuFile = new ToolStripMenuItem();
             this.mnuExport = new ToolStripMenuItem();
@@ -82,11 +82,11 @@ namespace bai03
             this.tblGrid.SuspendLayout();
             this.SuspendLayout();
 
-            // ---------- errorProvider ----------
+            // errorProvider 
             this.errorProvider.ContainerControl = this;
             this.errorProvider.BlinkStyle = ErrorBlinkStyle.AlwaysBlink;
 
-            // ---------- menuStrip ----------
+            // menuStrip 
             this.menuStrip.Items.AddRange(new ToolStripItem[] { this.mnuFile });
             this.menuStrip.Name = "menuStrip";
 
@@ -106,14 +106,14 @@ namespace bai03
             this.mnuExit.Text = "Exit";
             this.mnuExit.Click += new System.EventHandler(this.MnuExit_Click);
 
-            // ---------- statusStrip ----------
+            // statusStrip 
             this.statusStrip.Items.AddRange(new ToolStripItem[] { this.lblTotal });
             this.statusStrip.Name = "statusStrip";
 
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Text = "Tổng số sản phẩm: 0";
 
-            // ---------- tableMain: 35% | 65% ----------
+            // tableMain: 35% | 65% 
             this.tableMain.ColumnCount = 2;
             this.tableMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 35F));
             this.tableMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 65F));
@@ -125,14 +125,14 @@ namespace bai03
             this.tableMain.Name = "tableMain";
             this.tableMain.Padding = new Padding(8);
 
-            // ---------- grpInput ----------
+            // grpInput
             this.grpInput.Controls.Add(this.tblInput);
             this.grpInput.Dock = DockStyle.Fill;
             this.grpInput.Name = "grpInput";
             this.grpInput.Padding = new Padding(8);
             this.grpInput.Text = "Thông tin sản phẩm";
 
-            // ---------- tblInput ----------
+            // tblInput 
             this.tblInput.ColumnCount = 2;
             this.tblInput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
             this.tblInput.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 70F));
@@ -163,7 +163,7 @@ namespace bai03
             this.tblInput.Dock = DockStyle.Fill;
             this.tblInput.Name = "tblInput";
 
-            // ---------- Labels ----------
+            //Labels 
             ConfigLabel(this.lblId, "lblId", "Mã SP:");
             ConfigLabel(this.lblName, "lblName", "Tên SP:");
             ConfigLabel(this.lblCategory, "lblCategory", "Danh mục:");
@@ -175,7 +175,7 @@ namespace bai03
             this.lblImage.Name = "lblImage";
             this.lblImage.Text = "Ảnh:";
 
-            // ---------- TextBox / ComboBox ----------
+            //TextBox / ComboBox
             ConfigTextBox(this.txtProductId, "txtProductId");
             ConfigTextBox(this.txtProductName, "txtProductName");
             ConfigTextBox(this.txtUnitPrice, "txtUnitPrice");
@@ -186,7 +186,7 @@ namespace bai03
             this.cboCategory.Margin = new Padding(3, 6, 3, 6);
             this.cboCategory.Name = "cboCategory";
 
-            // ---------- picAvatar ----------
+            //picAvatar
             this.picAvatar.BorderStyle = BorderStyle.FixedSingle;
             this.picAvatar.Dock = DockStyle.Fill;
             this.picAvatar.MinimumSize = new Size(80, 80);
@@ -194,14 +194,14 @@ namespace bai03
             this.picAvatar.SizeMode = PictureBoxSizeMode.Zoom;
             this.picAvatar.TabStop = false;
 
-            // ---------- btnChooseImage ----------
+            // btnChooseImage
             this.btnChooseImage.Anchor = AnchorStyles.Left;
             this.btnChooseImage.AutoSize = true;
             this.btnChooseImage.Name = "btnChooseImage";
             this.btnChooseImage.Text = "Chọn ảnh...";
             this.btnChooseImage.Click += new System.EventHandler(this.BtnChooseImage_Click);
 
-            // ---------- flowButtons ----------
+            //flowButtons
             this.flowButtons.AutoSize = true;
             this.flowButtons.Controls.Add(this.btnAdd);
             this.flowButtons.Controls.Add(this.btnUpdate);
@@ -222,7 +222,7 @@ namespace bai03
             ConfigButton(this.btnExport, "btnExport", "Xuất CSV");
             this.btnExport.Click += new System.EventHandler(this.Export_Click);
 
-            // ---------- tblGrid ----------
+            //tblGrid
             this.tblGrid.ColumnCount = 2;
             this.tblGrid.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
             this.tblGrid.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
@@ -247,7 +247,7 @@ namespace bai03
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
 
-            // ---------- dgvProducts ----------
+            //dgvProducts
             this.dgvProducts.AllowUserToAddRows = false;
             this.dgvProducts.AllowUserToDeleteRows = false;
             this.dgvProducts.AutoGenerateColumns = false;
@@ -296,7 +296,7 @@ namespace bai03
             this.colQty.HeaderText = "Số Lượng";
             this.colQty.Name = "colQty";
 
-            // ---------- Form1 ----------
+            // Form1
             this.AutoScaleDimensions = new SizeF(7F, 15F);
             this.AutoScaleMode = AutoScaleMode.Font;
             this.ClientSize = new Size(1084, 611);
@@ -328,7 +328,7 @@ namespace bai03
             this.PerformLayout();
         }
 
-        // ---------- Hàm hỗ trợ cấu hình control ----------
+        //Hàm hỗ trợ cấu hình control
         private static void ConfigLabel(Label lbl, string name, string text)
         {
             lbl.Anchor = AnchorStyles.Left;
@@ -355,7 +355,7 @@ namespace bai03
 
         #endregion
 
-        // ---------- Khai báo control ----------
+        //Khai báo control 
         private MenuStrip menuStrip;
         private ToolStripMenuItem mnuFile;
         private ToolStripMenuItem mnuExport;
