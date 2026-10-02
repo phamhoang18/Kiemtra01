@@ -1,1 +1,9 @@
-
+https://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/TC01_bai3(ph%C3%B3ng%20to).png
+https://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/TC01_bai3(%E1%BA%A3nh%20g%E1%BB%91c).png
+https://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/TC02.1_b%C3%A0i3.png
+https://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/TC02.2_b%C3%A0i3.png
+http://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/TC03_b%C3%A0i3.png
+https://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/TC04_b%C3%A0i3.png
+https://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/TC05.1_b%C3%A0i3.png
+https://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/TC05.2_b%C3%A0i3.png
+https://github.com/phamhoang18/Kiemtra01/blob/main/Bai3/images/%E1%BA%A2nh%20laptop.png
