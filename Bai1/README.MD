@@ -32,4 +32,4 @@ Phương thức override (ở lớp con):
 Câu 4: Tại sao thành phần static không thể truy xuất qua một thể hiện (Object Instance) tạo bởi new?
 Cơ chế: Thành phần static (biến, phương thức, thuộc tính) thuộc về bản thân Lớp (Class level) chứ không thuộc về bất kỳ thể hiện cụ thể nào (Instance level).
 Vùng nhớ: Thành phần static được khởi tạo duy nhất một lần và lưu trữ trong vùng nhớ tĩnh (Type metadata/Type Object) ngay khi Lớp được nạp vào bộ nhớ (.NET AppDomain). Trong khi đó, toán tử new cấp phát bộ nhớ trên Heap cho từng thể hiện riêng biệt.
-Nguyên tắc thiết kế C#: C# bắt buộc gọi thành phần static thông qua Tên_Lớp (ClassName.StaticMember) để tránh sự mơ hồ (ambiguity), tăng tính rõ ràng cho mã nguồn (giúp lập trình viên phân biệt rõ đâu là dữ liệu dùng chung toàn cục của lớp, đâu là dữ liệu riêng của từng đối tượng).
+Nguyên tắc thiết kế C#: C# bắt buộc gọi thành phần static thông qua Tên_Lớp (ClassName.StaticMember) để tránh sự mơ hồ (ambiguity), tăng tính rõ ràng cho mã nguồn (giúp lập trình viên phân biệt rõ đâu là dữ liệu dùng chung toàn cục của lớp, đâu là dữ liệu riêng của từng đối tượng)
